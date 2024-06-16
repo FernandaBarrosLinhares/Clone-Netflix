@@ -2,6 +2,7 @@
     margin:0;
     color:white;
     font-family: 'Inter', sans-serif; 
+    box-sizing: border-box;
 }
 body{
     display: flex;
@@ -17,9 +18,12 @@ body{
 .container{
     display: flex;
     flex-direction: column;
-    background-color: black;
-    /* background-image: caminho; */
+    background-color: rgb(24, 22, 22);
+    background-image: url(`assets/poster.png);
+    background-size: cover;
+    background-position: bottom;
     min-height: 100%;    
+    
 
     
 }
@@ -27,10 +31,10 @@ body{
     display: flex;
     flex-direction: row;
     list-style-type:none;
-    padding: 2em 25vw;
-    justify-content: space-between;
+    padding: 25px;
+    justify-content: space-around;
     align-items: flex-end;
-    width: 60vw;
+    
 }
 
 ul li{
@@ -40,7 +44,10 @@ ul li{
 .info_serie {
     display: flex;
     flex-direction: column;
-    width: 450px;
+    width: 450  px;
+    height: 411pxS;
+   
+    
 }
 
 .titulo {
@@ -69,6 +76,10 @@ ul li{
     height: 135px;
     background-color: #E5E5E5;
     border-radius: 4px;
+}
+.lista-episodios{
+    display: flex;
+    flex-direction: row;
 }
 
 .m-t-14 {
@@ -107,7 +118,7 @@ ul li{
 .social {
     width: 30px;
     height: 160px;
-    background-color: white;
+    /* background-color: white; */
     position: absolute;
     right: 30px;
     top: 50%; 

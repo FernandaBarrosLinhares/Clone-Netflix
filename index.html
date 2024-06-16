@@ -21,25 +21,84 @@
             <div class="info-serie">
                 <h4 class="titulo">Supernatural</h4>
                 <h6 class="genero m-t-14 m-b-28">Drama,Mistério, Terror.</h6>
-                <spam class="descricao">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel sed laborum quibusdam laboriosam quas dolore placeat aliquid autem illo tempora.<a class="more-info" href="#">Read more</a></span></spam>
+                <spam class="descricao m-t-28">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel sed laborum quibusdam laboriosam quas dolore placeat aliquid autem illo tempora.<a class="more-info" href="#">Read more</a></span></spam>
                 
-                <div class="row m - t -56">
+                <div class="row m-t-56">
                     <spam>1ª Temporada</spam>
-                    <img src="chevron-left.png" alt="seta esquerda">
-                    <img src="chevron-right.png" alt="seta direita">
+                    <img src="assets/chevron-left.png" alt="seta esquerda">
+                    <img src="assets/chevron-right.png" alt="seta direita">
                 </div> 
-                <div class="episodios">
-                   <div card="card-episodio">Imagem1</div>
+                <div class="episodios m-t-20">
+                   <div card="card-episodio">
+                    <span>Titulo 1</span>
+                    <span>24m</span>
+                   </div>
                    <div card="card-episodio">Imagem2</div>
-                   <div card="card-episodio">Imagem3</div>
+
+                   <!--tentendo carregar a lista-->
+                   <div id="listaEpisodios">
+
+                   </div>
                 </div>
+                 <div card="card-episodio">
+                    <img src="poster.png" alt="">
+                 </div>
             </div> 
-            <img  class="poster"src="poster.png" alt="">
+            <img  class="poster"src="./assets/poster.png" alt="Poster Supernatural">
             <div class="social">
-                <a href="#"><img id="instagram" src="./img/instagram.png" alt="Instagram Icon"></a>
-                <a href="#"><img id="facebook" src="./img/facebook.png" alt="Facebook Icon"></a>
-                <a href="#"><img id="twitter" src="./img/twitter.png" alt="Twitter Icon"></a>
+                <a href="#"><img id="instagram" src="./assets/instagram.png" alt="Instagram Icon"></a>
+                <a href="#"><img id="facebook" src="./assets/facebook.png" alt="Facebook Icon"></a>
+                <a href="#"><img id="twitter" src="./assets/twitter.png" alt="Twitter Icon"></a>
             </div>
+
+            <script>
+                        let social = document.getElementById('social');
+
+                        social.addEventListener('mouseover', () => {
+                        social.style.backgroundColor = 'lightblue';
+});
+
+myDiv.addEventListener('mouseout', () => {
+  myDiv.style.backgroundColor = '';
+});
+
+            </script>
+
+            <!--REfazendo sozinha-->
+            <div id="lista-episodios">
+
+            </div>
+            <style>
+                #lista-episodios{
+                    display: flex;
+                    flex-direction: row;
+                }
+            </style>
+
+            <script>
+                 const listaEps = document.getElementById("lista-episodios");
+                 listaEps.innerHTML += `<div>
+                                                <img src="">
+                                                <span>${nomeEpisodio}</span>
+
+                    {</div>`;
+            </script>
+
+
+
+            <!--Feito na aula -->
+            <!-- <script>
+                const episodio = [
+                    {
+                        id:1,
+                        episodio:'T101',
+                        tempo:'24m'
+                        
+                    }
+                ]
+                const listaEpisodios = document.getElementById(`listaEpisodios`)
+                const cardEpisodios = document.createElement(`cardEpisodios`)
+</script> -->
         </div>
      
      
