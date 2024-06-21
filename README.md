@@ -2,7 +2,7 @@
 
 Clone pagína Netflix, baseada no layout disponibilizado pelo professor.
 
-<img  class="poster"src="./assets/poster.png" alt="Poster Supernatural">
+![Texto Alternativo](https://www.figma.com/design/BTRenzsckr78WFx9KKDJMH/NetflixClone?node-id=0-1&t=tNKyByEyBmod56lK-0)
 
 
 ### Exercício curso Futuro DEV, semana 04, módulo 2
