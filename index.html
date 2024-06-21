@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="description" content="Clone pagina do Netflix">
+    <meta name="keywords" content="HTML, CSS, JavaScript, DOM">
+    <meta name="author" content="Fernanda Linhares">
     <title>Netflix</title>
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -10,11 +13,11 @@
     <div class="container">
         <div class="menu">
             <ul>
-                <li>Sobre</li>
-                <li>Trailler</li>
+                <a href="sobre"> <li>Sobre</li></a>
+                <a href="trailler"><li>Trailler</li></a>
                 <li><img alt="Logo Netflix"src="./assets/netflix_logo.png"></li>
-                <li>Atores</li>
-                <li>Avaliações</li>
+                <a href="avaliacoes"><li>Avaliações</li></a>
+                <a href="atores"><li>Atores</li></a>
             </ul>
         </div>
         <div class="row ph-30 gap-150 pt-50">
@@ -33,16 +36,16 @@
                     <span>Titulo 1</span>
                     <span>24m</span>
                    </div>
-                   <div card="card-episodio">Imagem2</div>
+                   <!-- <div card="card-episodio">Imagem2</div> -->
 
                    <!--tentendo carregar a lista-->
                    <div id="listaEpisodios">
-
+                        
                    </div>
                 </div>
-                 <div card="card-episodio">
+                 <!-- <div card="card-episodio">
                     <img src="poster.png" alt="">
-                 </div>
+                 </div> -->
             </div> 
             <img  class="poster"src="./assets/poster.png" alt="Poster Supernatural">
             <div class="social">
@@ -90,6 +93,12 @@
 </script>
         </div>
         
-     
+        <footer>
+            <span>2005</span>
+            <span>|</span>
+            <span>1 TEMPORADA</span>
+            <span>|</span>
+            <span>IMDB 9.5</span>
+        </footer>
 </body>
 </html>
